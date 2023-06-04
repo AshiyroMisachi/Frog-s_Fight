@@ -13,11 +13,11 @@ export class Preload extends Phaser.Scene {
         this.load.tilemapTiledJSON("grotte", "../assets/json/grotte.json");
 
         //SpriteSheet
-        this.load.spritesheet('perso', '../assets/spritesheet/persoSS.png',
+        this.load.spritesheet('perso', './assets/spritesheet/persoSS.png',
             { frameWidth: 128, frameHeight: 256 });
-        this.load.spritesheet('tongEnd', '../assets/spritesheet/tong.png',
+        this.load.spritesheet('tongEnd', './assets/spritesheet/tong.png',
             { frameWidth: 32, frameHeight: 32 });
-        this.load.image("tong", "../assets/spritesheet/tongL.png");
+        this.load.image("tong", "./assets/spritesheet/tongL.png");
 
         //Hat
         this.load.spritesheet('hatGrab', '../assets/spritesheet/hatGrab.png',
