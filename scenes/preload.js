@@ -5,19 +5,19 @@ export class Preload extends Phaser.Scene {
 
     preload() {
         //Map Tiled
-        this.load.image("tileset_Test", "../maps/tileset_test.png");
-        this.load.image("tileset_PlaceHolder", "../maps/tileset_placeHolder.png");
+        this.load.image("tileset_Test", "../../maps/tileset_test.png");
+        this.load.image("tileset_PlaceHolder", "../../maps/tileset_placeHolder.png");
         this.load.tilemapTiledJSON("sceneTest", "../assets/json/sceneTest.json");
-        this.load.tilemapTiledJSON("etang", "../assets/json/etang.json");
-        this.load.tilemapTiledJSON("marais", "../assets/json/marais.json");
-        this.load.tilemapTiledJSON("grotte", "../assets/json/grotte.json");
+        this.load.tilemapTiledJSON("etang", "../../assets/json/etang.json");
+        this.load.tilemapTiledJSON("marais", "../../assets/json/marais.json");
+        this.load.tilemapTiledJSON("grotte", "../../assets/json/grotte.json");
 
         //SpriteSheet
-        this.load.spritesheet('perso', './assets/spritesheet/persoSS.png',
+        this.load.spritesheet('perso', '../assets/spritesheet/persoSS.png',
             { frameWidth: 128, frameHeight: 256 });
-        this.load.spritesheet('tongEnd', './assets/spritesheet/tong.png',
+        this.load.spritesheet('tongEnd', '../assets/spritesheet/tong.png',
             { frameWidth: 32, frameHeight: 32 });
-        this.load.image("tong", "./assets/spritesheet/tongL.png");
+        this.load.image("tong", "../assets/spritesheet/tongL.png");
 
         //Hat
         this.load.spritesheet('hatGrab', '../assets/spritesheet/hatGrab.png',
